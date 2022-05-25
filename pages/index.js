@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
@@ -22,23 +23,23 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/second" className={styles.card}>
+          <Link to="/second" className={styles.card}>
             <h2>Second page&rarr;</h2>
             <p>Click here to visit the second page of this NextJS app</p>
-          </a>
+          </Link>
 
           <a href="/third" className={styles.card}>
             <h2>THIRD PAGE</h2>
             <p>Click here for the 3rd page</p>
           </a>
 
-          <a
-            href="/third"
+          <Link
+            to="/third"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          </Link>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

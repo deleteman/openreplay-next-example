@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Trackable from '../components/trackable'
 
@@ -18,7 +19,7 @@ export default Trackable(function Second() {
         </h1>
 
         
-        <a href="/">Go back home</a>
+        <Link to="/">Go back home</Link>
       </main>
 
       <footer className={styles.footer}>
