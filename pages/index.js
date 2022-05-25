@@ -23,18 +23,18 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <Link to="/second" className={styles.card}>
+          <Link href="/second" className={styles.card}>
             <h2>Second page&rarr;</h2>
             <p>Click here to visit the second page of this NextJS app</p>
           </Link>
 
-          <Link to="/third" className={styles.card}>
+          <Link href="/third" className={styles.card}>
             <h2>THIRD PAGE</h2>
             <p>Click here for the 3rd page</p>
           </Link>
 
           <Link
-            to="/third"
+            href="/third"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>

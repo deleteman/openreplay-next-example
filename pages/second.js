@@ -18,7 +18,7 @@ export default function Second() {
         </h1>
 
         
-        <Link to="/">Go back home</Link>
+        <Link href="/">Go back home</Link>
       </main>
 
       <footer className={styles.footer}>
