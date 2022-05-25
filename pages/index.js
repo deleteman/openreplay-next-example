@@ -24,22 +24,25 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link href="/second" className={styles.card}>
-            <h2>Second page&rarr;</h2>
-            <p>Click here to visit the second page of this NextJS app</p>
+            <a>
+              <h2>Second page&rarr;</h2>
+              <p>Click here to visit the second page of this NextJS app</p>
+            </a>
           </Link>
 
           <Link href="/third" className={styles.card}>
-            <h2>THIRD PAGE</h2>
-            <p>Click here for the 3rd page</p>
+            <a>
+              <h2>THIRD PAGE</h2>
+              <p>Click here for the 3rd page</p>
+            </a>
           </Link>
 
-          <Link
-            href="/third"
+          <a
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </Link>
+          </a>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
