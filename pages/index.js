@@ -28,10 +28,10 @@ export default function Home() {
             <p>Click here to visit the second page of this NextJS app</p>
           </Link>
 
-          <a href="/third" className={styles.card}>
+          <Link to="/third" className={styles.card}>
             <h2>THIRD PAGE</h2>
             <p>Click here for the 3rd page</p>
-          </a>
+          </Link>
 
           <Link
             to="/third"
