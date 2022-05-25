@@ -10,7 +10,7 @@ export function startTracker(config) {
     console.log("Starting tracker...")
     console.log("Custom configuration received: ", config)
 
-    const getUserId = (config.userIdEnabled && config.getUserId) ? config.getUserId : localGetUserId
+    const getUserId = (config?.userIdEnabled && config?.getUserId) ? config.getUserId : localGetUserId
     let userId = null;
 
     const trackerConfig = {
