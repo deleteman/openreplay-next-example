@@ -5,7 +5,9 @@ import { startTracker } from '../utils/tracker'
 function MyApp({ Component, pageProps }) {
 
   useEffect( () => {
-    startTracker()
+    startTracker({
+      userIdEnabled: true
+    })
   }, [])
   
   return <Component {...pageProps} />

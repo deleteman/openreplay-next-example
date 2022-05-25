@@ -1,7 +1,7 @@
 import Tracker from '@openreplay/tracker';
 import {v4 as uuidV4} from 'uuid'
 
-function localGetUserId() {
+function defaultGetUserId() {
    return uuidV4() 
 }
 
@@ -10,7 +10,7 @@ export function startTracker(config) {
     console.log("Starting tracker...")
     console.log("Custom configuration received: ", config)
 
-    const getUserId = (config?.userIdEnabled && config?.getUserId) ? config.getUserId : localGetUserId
+    const getUserId = (config?.userIdEnabled && config?.getUserId) ? config.getUserId : defaultGetUserId
     let userId = null;
 
     const trackerConfig = {
