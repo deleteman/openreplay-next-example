@@ -22,18 +22,18 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/second" className={styles.card}>
+            <h2>Second page&rarr;</h2>
+            <p>Click here to visit the second page of this NextJS app</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/third" className={styles.card}>
+            <h2>THIRD PAGE</h2>
+            <p>Click here for the 3rd page</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/third"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
