@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import '../styles/globals.css'
-import Trackable from '../components/trackable'
+import { startTracker } from '../utils/tracker'
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect( () => {
+    startTracker()
+  }, [])
   
   return <Component {...pageProps} />
 }

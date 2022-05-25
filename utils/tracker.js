@@ -5,7 +5,7 @@ function localGetUserId() {
    return uuidV4() 
 }
 
-export function startTracker(projectKey, config) {
+export function startTracker(config) {
 
     console.log("Starting tracker...")
     console.log("Custom configuration received: ", config)
@@ -14,7 +14,7 @@ export function startTracker(projectKey, config) {
     let userId = null;
 
     const trackerConfig = {
-        projectKey
+        projectKey: config.projectKey || process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY
     }
 
     console.log("Tracker configuration")

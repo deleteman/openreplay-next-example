@@ -2,9 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Trackable from '../components/trackable'
 
-export default Trackable(function Second() {
+export default function Second() {
   return (
     <div className={styles.container}>
       <Head>
@@ -37,4 +36,3 @@ export default Trackable(function Second() {
     </div>
   )
 }
-)
