@@ -14,14 +14,14 @@ export function startTracker(config) {
     let userId = null;
 
     const trackerConfig = {
-        projectKey: config.projectKey || process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY
+        projectKey: config?.projectKey || process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY
     }
 
     console.log("Tracker configuration")
     console.log(trackerConfig)
     const tracker = new Tracker(trackerConfig);
 
-    if(config.userIdEnabled) {
+    if(config?.userIdEnabled) {
         userId = getUserId()
         tracker.setUserID(userId)
     }
