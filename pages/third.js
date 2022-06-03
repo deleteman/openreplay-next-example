@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { TrackerContext } from '../context/trackerContext'
 import styles from '../styles/Home.module.css'
-import { startTracker } from '../utils/tracker'
 
 export default function Third({projectKey}) {
     
+    const {tracker} = useContext(TrackerContext)
+    
     useEffect( () => {
-        startTracker({
-            userIdEnabled: true
-        })
+       tracker.start()
     }, [])
+    
     
     
     return (

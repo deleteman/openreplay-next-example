@@ -1,18 +1,11 @@
-import { useEffect } from 'react'
 import '../styles/globals.css'
-import { startTracker } from '../utils/tracker'
+import TrackerProvider from '../context/trackerContext'
 
 function MyApp({ Component, pageProps }) {
 
-  /*
-  useEffect( () => {
-    startTracker({
-      userIdEnabled: true
-    })
-  }, [])
-  */
-  
-  return <Component {...pageProps} />
+  return <TrackerProvider>
+        <Component {...pageProps} />
+    </TrackerProvider>
 }
 
 
