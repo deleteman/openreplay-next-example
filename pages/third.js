@@ -7,10 +7,11 @@ import styles from '../styles/Home.module.css'
 
 export default function Third({projectKey}) {
     
-    const {tracker} = useContext(TrackerContext)
+    const {initTracker, startTracking} = useContext(TrackerContext)
     
     useEffect( () => {
-       tracker.start()
+        initTracker()
+       startTracking()
     }, [])
     
     
